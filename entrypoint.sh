@@ -18,6 +18,7 @@ fi
 
 # Patch demo kibi to use standard ES port
 perl -p -i -e "s/localhost/0.0.0.0/" /opt/kibana/config/kibana.yml
+perl -p -i -e "s/\#server.host/server.host/" /opt/kibana/config/kibana.yml
 
 # Start Kibi
 /opt/kibana/bin/kibana &
